@@ -57,7 +57,7 @@
             }     
 
         nav{
-        background-color: rgba(240, 240, 240, 0.88);
+        background-color: rgba(241, 241, 241, 0.88);
         /* padding */
         padding: 8px 20px;
         display: flex;
@@ -106,7 +106,7 @@
                 display:inline-block;
 
                 
-            color: hsl(193, 100%, 33%);
+            color: #0084a8;
         text-decoration: none;
             font-weight: 600;
         font-size: 2.5rem;
@@ -115,10 +115,11 @@
             }
 
 
-            button:hover{
+           a:hover{
                 cursor: pointer;
-                transition: all 1.2s;
+                animation: pulse 1.5s infinite;
             }
+            
     /* selector de clases */
     .text-black{
         color: #000000
@@ -177,7 +178,7 @@
 
     .botonera ul li a{
     font-size: 3rem;
-    color:#009ac4;
+    color:#0084a8;
     font-weight: 900;
     line-height: 55px;
     }
@@ -197,3 +198,17 @@
     padding: 15px;
     }
 
+@keyframes pulse {
+0% {
+    transform:scale(.99);
+    box-shadow: 0 0 0 0 rgba(256, 256,256, .1);
+}
+70% {
+    transform:scale(1);
+    box-shadow: 0 0 0 25px rgba(256, 256,256, 0);
+}
+100% {
+    transform:scale(.99);
+    box-shadow: 0 0 0 0 rgba(256, 256,256, 0);
+}
+}
